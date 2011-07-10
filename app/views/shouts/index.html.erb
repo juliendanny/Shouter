@@ -1,0 +1,18 @@
+<div>
+  <%= form_for @shout do |form| %>
+    <p>
+      <%= form.text_field :body %>
+    </p>
+    <p>
+      <%= form.submit %>
+    </p>
+  <% end %>
+</div>
+
+<ul>
+  <% @shouts.each do |shout| %>
+    <li>
+      <%= shout.body %>
+    </li>
+  <% end %>
+</ul>
