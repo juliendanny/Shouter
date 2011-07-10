@@ -11,8 +11,6 @@
 
 <ul>
   <% @shouts.each do |shout| %>
-    <li>
-      <%= shout.body %>
-    </li>
+    <%= render :partial => "shout", :locals => { :shout => shout } %>
   <% end %>
 </ul>

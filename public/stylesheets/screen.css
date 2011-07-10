@@ -2,3 +2,8 @@
   background: yellow;
   color: black; 
 }
+
+.flash_failure {
+  background: red;
+  color: black; 
+}
